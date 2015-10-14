@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'ramlstyle'
+
+Ramlstyle::CLICommand.new.run(ARGV)
