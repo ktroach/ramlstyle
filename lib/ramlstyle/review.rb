@@ -7,7 +7,10 @@ module Ramlstyle
     def review
       # Root
 
-      lint(:error, "API Version (version) is required", @raml, &:version)
+      #lint(:error, "API Version (version) is required", @raml, &:version)
+
+      rule_producer = RuleProducer.new(@raml)
+      return 
 
       # Resources
 

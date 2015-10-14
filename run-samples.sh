@@ -12,7 +12,7 @@ _sample_files="${_sample_path}/*.raml"
 _output_root="${_project_path}/output"
 _output_path="${_output_root}/*.html"
 # optional bit to open output html files in a browser
-_open_output="1"
+_open_output="0"
 
 # output report
 _output_report="${_project_path}/output/report.html"
