@@ -9,13 +9,17 @@ _sample_path="${_project_path}/samples"
 _sample_files="${_sample_path}/*.raml"
 
 # default path to the output html files
-_output_path="${_project_path}/output/*.html"
+_output_root="${_project_path}/output"
+_output_path="${_output_root}/*.html"
 # optional bit to open output html files in a browser
-_open_output="0"
+_open_output="1"
 
 # output report
 _output_report="${_project_path}/output/report.html"
-_open_report="1"
+_open_report="0"
+
+printf "creating output directory, if it doesn't exist: ${_output_root}\n"
+mkdir -p "${_output_root}"
 
 printf "parsing raml sample files: ${_sample_files}\n"
 for f in ${_sample_files}
